@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Streaming de Vídeo</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
     <h1>Sistema de Streaming de Vídeo</h1>
-    <video id="videoPlayer" controls>
-        <source id="videoSource" src="assets/videos/sample.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
-    <script src="scripts/script.js"></script>
+    <div class="video-container">
+        <video id="videoPlayer" controls>
+            <source id="videoSource" src="assets/videos/sample.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <div class="botao-container">
+        <button id="video1Btn">Vídeo 1</button>
+        <button id="video2Btn">Vídeo 2</button>
+    </div>
+
+    <script src="scripts/js/script.js"></script>
 </body>
 </html>
